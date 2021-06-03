@@ -1,0 +1,15 @@
+.bg{
+    background-color: rgb(224, 172, 0);
+}
+.bg .headline{
+    font-family: roboto;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.bg .paragraph{
+    font-family: roboto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
