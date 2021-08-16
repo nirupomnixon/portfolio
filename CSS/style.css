@@ -14,7 +14,7 @@
 }
 
 .header_area .main-menu .navbar{
-    padding: 1rem 10rem ;
+    padding: 1rem 5rem ;
 }
 
 .header_area .main-menu .nav-item .nav-link{
@@ -356,4 +356,42 @@ footer.footer-area .copyrights{
 
 
 
-/* End Footer */ 
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+   
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #854eee 0%, #4c57de 100%);
+  }
+  #button:active {
+    background: linear-gradient(45deg, #854eee 0%, #4c57de 100%);
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  

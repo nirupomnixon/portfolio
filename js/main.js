@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 
+
+
     let $btns = $('.project-area .button-group button');
 
 
@@ -43,7 +45,7 @@ $(document).ready(function () {
 
     // sticky navigation menu
 
-    let nav_offset_top = $('.header_area').height() + 50;
+    let nav_offset_top = $('.header_area').height() + 30;
 
     function navbarFixed() {
         if ($('.header_area').length) {
@@ -60,4 +62,26 @@ $(document).ready(function () {
 
     navbarFixed();
 
+
+    
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
 });
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+});
+
+
+
